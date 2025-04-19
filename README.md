@@ -68,12 +68,13 @@ Tic-Tac-Toe : L'IA joue en utilisant l'algorithme Minimax.
 3️⃣ Tests et validation
 Le programme propose plusieurs tests automatiques, que vous pouvez activer en modifiant la variable test dans le fichier main.cpp. Voici les options disponibles :
 
+```
 test = 0 : Mode de jeu normal. Vous pouvez jouer au Tic-Tac-Toe ou aux Échecs avec l'IA ou un joueur humain.
 test = 1 : Test de base pour Tic-Tac-Toe. Cela vérifie des scénarios comme les coups invalides, les coups gagnants, et les matchs nuls.
 test = 2 : Tester l'IA contre un joueur aléatoire pour Tic-Tac-Toe. Cela simule des parties entre l'IA et un joueur qui joue de manière aléatoire.
 test = 3 : Tester l'IA contre elle-même pour Tic-Tac-Toe. Cela lance des parties entre deux instances de l'IA pour évaluer son efficacité.
 test = 4 : Test des fonctionnalités de base pour les Échecs, comme le roque, les prises en passant, et la détection de mat ou de stalemate.
 test = 5 : Tester un scénario où l'IA gagne avec un Roi et une Dame contre un Roi seul (vérifie la fin du jeu dans un cas simple).
-
+```
   
 

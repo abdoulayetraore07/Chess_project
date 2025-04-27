@@ -1,80 +1,62 @@
-# 🎮 Projet Échecs & Tic-Tac-Toe en C++ ♜⭕✖
-
+# 🎮 Chess & Tic-Tac-Toe Project in C++ ♜⭕✖
 ## 📌 Description
-Ce projet implémente **deux jeux classiques** en C++ :
+This project implements **two classic games** in C++:
 1. **Tic-Tac-Toe (3x3)**
-2. **Jeu d'Échecs (8x8)** avec affichage Unicode des pièces.
-
-L'utilisateur peut choisir entre **le Tic-Tac-Toe** et **les Échecs**, puis jouer en tour par tour.
-
+2. **Chess Game (8x8)** with Unicode display of pieces.
+The user can choose between **Tic-Tac-Toe** and **Chess**, then play turn by turn.
 ---
-
-## 🚀 **Fonctionnalités**
-✔ **Affichage Unicode des pièces** (`♜ ♞ ♝ ♛ ♚` pour les échecs, `✖ ⭕` pour le Tic-Tac-Toe).  
-✔ **Gestion complète des règles** (déplacement des pièces aux échecs).  
-✔ **Détection de la fin du jeu** (victoire, match nul, échec et mat).  
-✔ **Système de gestion des coups** (avec vérification des règles).  
-✔ **Code organisé en fichiers `.hpp` et `.cpp`**.
-
+## 🚀 **Features**
+✔ **Unicode display of pieces** (`♜ ♞ ♝ ♛ ♚` for chess, `✖ ⭕` for Tic-Tac-Toe).  
+✔ **Complete rules management** (piece movement in chess).  
+✔ **End of game detection** (victory, draw, checkmate).  
+✔ **Move management system** (with rules verification).  
+✔ **Code organized in `.hpp` and `.cpp` files**.
 ---
-🛠 Compilation avec Makefile
-
-La compilation a été automatisée avec un **Makefile**, donc pour compiler le projet, il suffit d'exécuter la commande suivante dans le terminal : make
-
-Cela va automatiquement compiler tous les fichiers source et générer l'exécutable. Si vous souhaitez nettoyer les fichiers compilés, vous pouvez utiliser la commande suivante : make clean
-
+🛠 Compilation with Makefile
+Compilation has been automated with a **Makefile**, so to compile the project, simply execute the following command in the terminal: make
+This will automatically compile all source files and generate the executable. If you want to clean the compiled files, you can use the following command: make clean
 ---
-
-## 📂 **Structure du projet**
+## 📂 **Project Structure**
 ```
-/projet-echecs
+/chess-project
 │── src/
-│   │── main.cpp          # Programme principal, gère l'exécution du jeu
-│   │── echiquier.hpp     # Déclaration de la classe Echiquier (jeu d'échecs)
-│   │── echiquier.cpp     # Implémentation de la classe Echiquier
-│   │── piece.hpp         # Déclaration de la classe Piece (représente les pièces d'échecs)
-│   │── piece.cpp         # Implémentation des comportements des pièces
-│   │── coup.hpp          # Déclaration de la classe Coup (mouvements des pièces)
-│   │── coup.cpp          # Implémentation de la gestion des coups
-│   │── openings.cpp      # Implémentation des ouvertures pour le jeu d'échecs
-│   │── openings.hpp      # Déclaration de la classe Openings (gestion des ouvertures)
-│   │── Test.cpp          # Implémentation des tests unitaires pour les jeux
-│   │── Test.hpp          # Déclaration des tests unitaires
-│── README.md             # Documentation du projet
-
+│   │── main.cpp          # Main program, manages game execution
+│   │── echiquier.hpp     # Declaration of the Echiquier class (chess game)
+│   │── echiquier.cpp     # Implementation of the Echiquier class
+│   │── piece.hpp         # Declaration of the Piece class (represents chess pieces)
+│   │── piece.cpp         # Implementation of piece behaviors
+│   │── coup.hpp          # Declaration of the Coup class (piece movements)
+│   │── coup.cpp          # Implementation of move management
+│   │── openings.cpp      # Implementation of openings for chess
+│   │── openings.hpp      # Declaration of the Openings class (openings management)
+│   │── Test.cpp          # Implementation of unit tests for games
+│   │── Test.hpp          # Declaration of unit tests
+│── README.md             # Project documentation
 ```
-
 ---
-
-## 🎲 **Comment jouer ?**
-### 1️⃣ **Choix du mode de jeu**
-Le programme demande si tu veux jouer :
+## 🎲 **How to play?**
+### 1️⃣ **Game mode selection**
+The program asks if you want to play:
 ```
-Choisissez un jeu :
+Choose a game:
 1. Tic-Tac-Toe (3x3)
-2. Échecs (8x8)
-Entrez votre choix (1 ou 2) :
+2. Chess (8x8)
+Enter your choice (1 or 2):
 ```
-
-- 🟢 **Tic-Tac-Toe** : Entrez des coups sous forme `A1`.
-- 🟢 **Échecs** : Entrez des coups sous forme `E2 E4`.
-
+- 🟢 **Tic-Tac-Toe**: Enter moves in the form `A1`.
+- 🟢 **Chess**: Enter moves in the form `E2 E4`.
 ---
-2️⃣ Algorithmes et IA
-Tic-Tac-Toe : L'IA joue en utilisant l'algorithme Minimax.
-Échecs : L'IA utilise Minimax avec l'élagage Alpha-Beta pour optimiser le calcul et jouer de manière optimale. Le système gère les coups classiques ainsi que des ouvertures célèbres pour donner à l'IA un avantage stratégique au début du jeu.
-
+### 2️⃣ Algorithms and AI
+Tic-Tac-Toe: The AI plays using the Minimax algorithm.
+Chess: The AI uses Minimax with Alpha-Beta pruning to optimize calculation and play optimally. The system manages classic moves as well as famous openings to give the AI a strategic advantage at the beginning of the game.
 ---
-3️⃣ Tests et validation
-Le programme propose plusieurs tests automatiques, que vous pouvez activer en modifiant la variable test dans le fichier main.cpp. Voici les options disponibles :
-
+### 3️⃣ Tests and validation
+The program offers several automatic tests, which you can activate by modifying the test variable in the main.cpp file. Here are the available options:
 ```
-test = 0 : Mode de jeu normal. Vous pouvez jouer au Tic-Tac-Toe ou aux Échecs avec l'IA ou un joueur humain.
-test = 1 : Test de base pour Tic-Tac-Toe. Cela vérifie des scénarios comme les coups invalides, les coups gagnants, et les matchs nuls.
-test = 2 : Tester l'IA contre un joueur aléatoire pour Tic-Tac-Toe. Cela simule des parties entre l'IA et un joueur qui joue de manière aléatoire.
-test = 3 : Tester l'IA contre elle-même pour Tic-Tac-Toe. Cela lance des parties entre deux instances de l'IA pour évaluer son efficacité.
-test = 4 : Test des fonctionnalités de base pour les Échecs, comme le roque, les prises en passant, et la détection de mat ou de stalemate.
-test = 5 : Tester un scénario où l'IA gagne avec un Roi et une Dame contre un Roi seul (vérifie la fin du jeu dans un cas simple).
+test = 0: Normal game mode. You can play Tic-Tac-Toe or Chess with AI or a human player.
+test = 1: Basic test for Tic-Tac-Toe. This checks scenarios such as invalid moves, winning moves, and draws.
+test = 2: Test AI against a random player for Tic-Tac-Toe. This simulates games between the AI and a player who plays randomly.
+test = 3: Test AI against itself for Tic-Tac-Toe. This launches games between two instances of the AI to evaluate its effectiveness.
+test = 4: Test basic chess functionalities, such as castling, en passant captures, and detection of checkmate or stalemate.
+test = 5: Test a scenario where the AI wins with a King and Queen against a lone King (checks end of game in a simple case).
 ```
-  
-

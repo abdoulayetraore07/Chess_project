@@ -4,18 +4,21 @@ This project implements **two classic games** in C++:
 1. **Tic-Tac-Toe (3x3)**
 2. **Chess Game (8x8)** with Unicode display of pieces.
 The user can choose between **Tic-Tac-Toe** and **Chess**, then play turn by turn.
+
 ---
 ## **Features**
-✔ **Unicode display of pieces** (`♜ ♞ ♝ ♛ ♚` for chess, `✖ ⭕` for Tic-Tac-Toe).  
-✔ **Complete rules management** (piece movement in chess).  
-✔ **End of game detection** (victory, draw, checkmate).  
-✔ **Move management system** (with rules verification).  
-✔ **Code organized in `.hpp` and `.cpp` files**.
----
+✔ Unicode display of pieces** (`♜ ♞ ♝ ♛ ♚` for chess, `✖ ⭕` for Tic-Tac-Toe).  
+✔ Complete rules management** (piece movement in chess).  
+✔ End of game detection** (victory, draw, checkmate).  
+✔ Move management system** (with rules verification).  
+✔ Code organized in `.hpp` and `.cpp` files**.
+
 Compilation with Makefile
 Compilation has been automated with a **Makefile**, so to compile the project, simply execute the following command in the terminal: make
 This will automatically compile all source files and generate the executable. If you want to clean the compiled files, you can use the following command: make clean
+
 ---
+
 ## **Project Structure**
 ```
 /chess-project
@@ -46,10 +49,13 @@ Enter your choice (1 or 2):
 - **Tic-Tac-Toe**: Enter moves in the form `A1`.
 - **Chess**: Enter moves in the form `E2 E4`.
 ---
+
 ### 2️⃣ Algorithms and AI
 Tic-Tac-Toe: The AI plays using the Minimax algorithm.
 Chess: The AI uses Minimax with Alpha-Beta pruning to optimize calculation and play optimally. The system manages classic moves as well as famous openings to give the AI a strategic advantage at the beginning of the game.
+
 ---
+
 ### 3️⃣ Tests and validation
 The program offers several automatic tests, which you can activate by modifying the test variable in the main.cpp file. Here are the available options:
 ```

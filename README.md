@@ -1,22 +1,22 @@
-# 🎮 Chess & Tic-Tac-Toe Project in C++ ♜⭕✖
+# Chess & Tic-Tac-Toe Project in C++
 ## 📌 Description
 This project implements **two classic games** in C++:
 1. **Tic-Tac-Toe (3x3)**
 2. **Chess Game (8x8)** with Unicode display of pieces.
 The user can choose between **Tic-Tac-Toe** and **Chess**, then play turn by turn.
 ---
-## 🚀 **Features**
+## **Features**
 ✔ **Unicode display of pieces** (`♜ ♞ ♝ ♛ ♚` for chess, `✖ ⭕` for Tic-Tac-Toe).  
 ✔ **Complete rules management** (piece movement in chess).  
 ✔ **End of game detection** (victory, draw, checkmate).  
 ✔ **Move management system** (with rules verification).  
 ✔ **Code organized in `.hpp` and `.cpp` files**.
 ---
-🛠 Compilation with Makefile
+Compilation with Makefile
 Compilation has been automated with a **Makefile**, so to compile the project, simply execute the following command in the terminal: make
 This will automatically compile all source files and generate the executable. If you want to clean the compiled files, you can use the following command: make clean
 ---
-## 📂 **Project Structure**
+## **Project Structure**
 ```
 /chess-project
 │── src/
@@ -34,7 +34,7 @@ This will automatically compile all source files and generate the executable. If
 │── README.md             # Project documentation
 ```
 ---
-## 🎲 **How to play?**
+## **How to play?**
 ### 1️⃣ **Game mode selection**
 The program asks if you want to play:
 ```
@@ -43,8 +43,8 @@ Choose a game:
 2. Chess (8x8)
 Enter your choice (1 or 2):
 ```
-- 🟢 **Tic-Tac-Toe**: Enter moves in the form `A1`.
-- 🟢 **Chess**: Enter moves in the form `E2 E4`.
+- **Tic-Tac-Toe**: Enter moves in the form `A1`.
+- **Chess**: Enter moves in the form `E2 E4`.
 ---
 ### 2️⃣ Algorithms and AI
 Tic-Tac-Toe: The AI plays using the Minimax algorithm.

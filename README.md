@@ -38,7 +38,7 @@ This will automatically compile all source files and generate the executable. If
 ```
 ---
 ## **How to play?**
-### 1️⃣ **Game mode selection**
+### **Game mode selection**
 The program asks if you want to play:
 ```
 Choose a game:
@@ -50,13 +50,13 @@ Enter your choice (1 or 2):
 - **Chess**: Enter moves in the form `E2 E4`.
 ---
 
-### 2️⃣ Algorithms and AI
+### Algorithms and AI
 Tic-Tac-Toe: The AI plays using the Minimax algorithm.
 Chess: The AI uses Minimax with Alpha-Beta pruning to optimize calculation and play optimally. The system manages classic moves as well as famous openings to give the AI a strategic advantage at the beginning of the game.
 
 ---
 
-### 3️⃣ Tests and validation
+### Tests and validation
 The program offers several automatic tests, which you can activate by modifying the test variable in the main.cpp file. Here are the available options:
 ```
 test = 0: Normal game mode. You can play Tic-Tac-Toe or Chess with AI or a human player.
